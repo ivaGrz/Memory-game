@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("./Images/background.jpg") no-repeat center;
+  background-size: cover;
+  font-family: 'Montserrat Alternates', sans-serif;
+  white-space: nowrap;
+  min-height: 700px;
+
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+table {
+  margin: 0 auto;
+}
+
+footer {
+  height: 50px;
+}
+
+.control {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.control th {
+  display: inline block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.control span {
+  padding: 5px;
+}
+.display {
+  font-size: 25px;
+}
+
+.moves {
+  color: Purple;
+}
+
+.time {
+  color: RoyalBlue;
+}
+
+.description {
+  position: absolute;
+  top: 650px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+}
+
+.highscore {
+  color: rgb(153, 0, 0);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 610px;
+  height: 20px;
+  text-align: center;
+}
+
+.highscore span {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+
+.description span {
+  position: relative;
+  top: 25px;
+}
+
+.cardBoard {
+  position: absolute;
+  top: 150px;
+  height: 450px;
+  width: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.top {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  border-radius: 3px;
+  margin: 4px;
+  box-shadow: 4px 4px DimGrey;
+}
+
+.closed {
+  background-color:silver;
+  background-image:
+  radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size:100px 50px;
+  color: transparent;
+}
+
+.open {
+  background-color: IndianRed;
+  color: black;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  cursor: not-allowed;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.blockCursor {
+  cursor: not-allowed;
+}
+
+.resetButton {
+  height: 50px;
+  width: 50px;
+}
+.reset {
+  height: 70px;
+}
+
+
+.A {
+  background-color: IndianRed;
+}
+.B {
+  background-color: SeaGreen;
+}
+.C {
+  background-color: RoyalBlue;
+}
+.D {
+  background-color: Plum;
+}
+.E {
+  background-color: Gold;
+}
+.F {
+  background-color: LightGreen;
+}
+.G {
+  background-color: Purple;
+}
+.H {
+  background-color: SkyBlue;
+}
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+  width: 450px;
+  height: 450px;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.mask {
+  filter:blur(6px);
+}
+
+.greatJob {
+  padding-top: 40px;
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  display: inline-block;
+}
+.refreshButton {
+  height: 80px;
+  width: 80px;
+}

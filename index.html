@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory game</title>
+    <link href='style.css' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+</head>
+
+<body>
+<div class = 'container'>
+    <div class = 'top'>
+        <h1>Memory game</h1>
+        <div>
+          <table>
+            <tr class = 'control'>
+              <th><span>Moves: </span><span class = 'moves display'>0</span></th>
+              <th><span>Time: </span><span class = 'time display'>0</span></th>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+    <div class = 'cardBoard'>
+        <table>
+            <tr>
+                <th><button class ="closed card" id = 0></button></th>
+                <th><button class ="closed card" id = 1></button></th>
+                <th><button class ="closed card" id = 2></button></th>
+                <th><button class ="closed card" id = 3></button></th>
+            </tr>
+            <tr>
+              <th><button class ="closed card" id = 4></button></th>
+              <th><button class ="closed card" id = 5></button></th>
+              <th><button class ="closed card" id = 6></button></th>
+              <th><button class ="closed card" id = 7></button></th>
+            </tr>
+            <tr>
+                <th><button class ="closed card" id = 8></button></th>
+                <th><button class ="closed card" id = 9></button></th>
+                <th><button class ="closed card" id = 10></button></th>
+                <th><button class ="closed card" id = 11></button></th>
+            </tr>
+            <tr>
+              <th><button class ="closed card" id = 12></button></th>
+              <th><button class ="closed card" id = 13></button></th>
+              <th><button class ="closed card" id = 14></button></th>
+              <th><button class ="closed card" id = 15></button></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class = 'highscore'>
+      <span>HIGHSCORE</span>
+      <span>Moves: </span><span class = 'movesHighscore'>0</span>
+      <span>Time: </span><span class = 'timeHighscore'>0</span>
+    </div>
+</div>
+
+<div class ='overlay hidden'>
+  <span class = 'greatJob' =>Great job!<br> &#x263A;</span><br>
+  <span><img class="refreshButton" src='./Images/refresh.png'></span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src='main.js'></script>
+
+</body>
+</html>
